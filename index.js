@@ -1,10 +1,20 @@
-// TODO: Include packages needed for this application
+import fs from "fs";
+import inquirer from "inquirer";
 
 // TODO: Create an array of questions for user input
-const questions = [];
+inquirer.prompt([
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What would you like your README title to be?'
+    },
+])
+    .then(data => {
+        console.log(data)
+    })
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+fs.writeToFile(fileName, data)
 
 // TODO: Create a function to initialize app
 function init() {}
