@@ -2,6 +2,8 @@
 
 ## Description
 
+${description}
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -13,11 +15,17 @@
 
 ## Installation 
 
+${data.installation}
+
 ## Usage
+
+${usage}
 
 ## License
 
 ## How to Contribute
+
+${contributions}
 
 ## Tests
 
