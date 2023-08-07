@@ -1,32 +1,35 @@
-# ${data.title}
+# README Generator
 
 ## Description
 
-${description}
+This application uses Node.js to create a user's README file in the terminal. The user will be prompted with questions, and their inputed answers will then fill in the README file data.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Contributing](#how-to-contribute)
-- [Tests](#tests)
-- [Questions](#questions)
+- [Screenshot](#screenshot)
+- [Video Walkthrough](#video-walkthrough)
+
 
 ## Installation 
 
-${data.installation}
+Clone or Fork the repository to your computer. Enter `npm i` to install dependancies.
 
 ## Usage
 
-${usage}
+- Open an integrated terminal from your project folder.
+- Type `node index.js` into the terminal.
+- Answer each prompt that follows.
 
-## License
+## Screenshot
 
-## How to Contribute
+![screenshot](./assets/readmescreenshot.gif)
 
-${contributions}
+## Video Walkthrough
 
-## Tests
+[Link to Walkthrough](https://watch.screencastify.com/v/upaLuS5F0REWzZjF8GYD)
 
-## Questions
+
+
+

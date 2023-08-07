@@ -1,9 +1,9 @@
-# test
+# README Generator Test
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
   
-  test
+  this is a test to show how this application functions
   
   ## Table of Contents
   
@@ -16,15 +16,15 @@
   
   ## Installation 
   
-  test
+  `npm i`
   
   ## Usage
   
-  test
+  Open an integrated terminal and type in `node index.js`
   
   ## License
 
-  MIT License
+  **MIT License**
 
       Copyright (c) 2023 
       
@@ -48,14 +48,14 @@
   
   ## How to Contribute
   
-  
+  N/A
   
   ## Tests
 
-  
+  N/a
   
   ## Questions
 
   If you would like to view more of my work, check out my [GitHub profile](https://github.com/noahr33/)
 
-  If you have any questions or comments, you can reach me at M@M.com
+  If you have any questions or comments, you can reach me at test@test.com

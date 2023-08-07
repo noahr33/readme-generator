@@ -52,7 +52,7 @@ inquirer.prompt([
 ])
     .then(data => {
         const md = generateMarkdown(data)
-        fs.writeFile(`./scripts/${data.title}.md`,
+        fs.writeFile(`./README-generated-files/${data.title}.md`,
         md, err => {
             if (err) {
                 throw err

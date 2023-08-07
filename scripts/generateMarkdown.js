@@ -1,4 +1,4 @@
-export const renderLicenseBadge = (license) => {
+const renderLicenseBadge = (license) => {
   switch(license) {
     case 'MIT':
       return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
@@ -21,11 +21,11 @@ export const renderLicenseBadge = (license) => {
 }
 
 
-function renderLicenseSection(license) {
+const renderLicenseSection = (license) => {
   const year = new Date().getFullYear()
   switch(license) {
     case 'MIT':
-      return `MIT License
+      return `**MIT License**
 
       Copyright (c) ${year} 
       
@@ -48,7 +48,7 @@ function renderLicenseSection(license) {
       SOFTWARE.`
 
     case 'GPLv2':
-      return `GNU General Public License, version 2
+      return `**GNU General Public License, version 2**
 
       Copyright (c) ${year}
       
@@ -67,7 +67,7 @@ function renderLicenseSection(license) {
       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.`
 
     case 'Apache':
-      return `Apache License, Version 2.0 
+      return `**Apache License, Version 2.0** 
 
       Copyright (c) ${year} 
 
@@ -84,7 +84,7 @@ function renderLicenseSection(license) {
       limitations under the License.`
     
     case 'GPLv3':
-      return `GNU General Public License, version 2
+      return `**GNU General Public License, version 2**
 
       Copyright (c) ${year}
 
@@ -102,7 +102,7 @@ function renderLicenseSection(license) {
       along with this program.  If not, see <https://www.gnu.org/licenses/>.`
 
     case 'BSD 3-Clause':
-      return `The 3-Clause BSD License
+      return `**The 3-Clause BSD License**
 
       Copyright (c) ${year}
       
