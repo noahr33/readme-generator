@@ -2,6 +2,7 @@ import fs from "fs";
 import inquirer from "inquirer";
 import { generateMarkdown } from "./scripts/generateMarkdown.js";
 
+// Prompts the user for input data then creates README file
 inquirer.prompt([
     {
         type: 'input',

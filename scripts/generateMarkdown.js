@@ -1,3 +1,4 @@
+// Returns license badge based on license input
 const renderLicenseBadge = (license) => {
   switch(license) {
     case 'MIT':
@@ -20,7 +21,7 @@ const renderLicenseBadge = (license) => {
   }
 }
 
-
+// Return license info based on license input
 const renderLicenseSection = (license) => {
   const year = new Date().getFullYear()
   switch(license) {
@@ -121,7 +122,7 @@ const renderLicenseSection = (license) => {
   }
 }
 
-
+// creates the content for the README file
 export const generateMarkdown = ({title, description, installation, usage, license, contributions, tests, username, email }) => {
   return `# ${title}
   ${renderLicenseBadge(license)}
