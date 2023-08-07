@@ -1,7 +1,7 @@
 import fs from "fs";
 import inquirer from "inquirer";
 import { generateMarkdown } from "./scripts/generateMarkdown.js";
-import { renderLicenseBadge } from "./scripts/generateMarkdown.js";
+// import { renderLicenseBadge } from "./scripts/generateMarkdown.js";
 
 inquirer.prompt([
     {
@@ -27,17 +27,27 @@ inquirer.prompt([
     {
         type: 'list',
         name: 'license',
-        message: 'Provide instructions and examples for use.',
-        choices: ['MIT', 'Apache']
+        message: 'Please select the license for your application.',
+        choices: ['MIT','GPLv2','Apache','GPLv3', 'BSD 3-Clause', 'N/A']
     },
     {
         type: 'input',
         name: 'contributions',
         message: 'How can users contribute?'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Does your application include tests? If so, also add instructions on how to test.'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email if you would like users to contact you.'
     }
 ])
     .then(data => {
-        renderLicenseBadge(data.license)
+        // renderLicenseBadge(license)
         const md = generateMarkdown(data)
         fs.writeFile(`./scripts/${data.title}.md`,
         md, err => {
