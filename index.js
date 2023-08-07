@@ -1,7 +1,6 @@
 import fs from "fs";
 import inquirer from "inquirer";
 import { generateMarkdown } from "./scripts/generateMarkdown.js";
-// import { renderLicenseBadge } from "./scripts/generateMarkdown.js";
 
 inquirer.prompt([
     {
@@ -42,12 +41,16 @@ inquirer.prompt([
     },
     {
         type: 'input',
+        name: 'username',
+        message: 'Enter your GitHib username.'
+    },
+    {
+        type: 'input',
         name: 'email',
         message: 'Enter your email if you would like users to contact you.'
     }
 ])
     .then(data => {
-        // renderLicenseBadge(license)
         const md = generateMarkdown(data)
         fs.writeFile(`./scripts/${data.title}.md`,
         md, err => {
@@ -57,12 +60,3 @@ inquirer.prompt([
             console.log(`${data.title}.md saved!`)
         })
     })
-
-// // TODO: Create a function to write README file
-// fs.writeToFile(fileName, data)
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();

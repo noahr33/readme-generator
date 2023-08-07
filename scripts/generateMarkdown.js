@@ -122,7 +122,7 @@ function renderLicenseSection(license) {
 }
 
 
-export const generateMarkdown = ({title, description, installation, usage, license, contributions, tests, email }) => {
+export const generateMarkdown = ({title, description, installation, usage, license, contributions, tests, username, email }) => {
   return `# ${title}
   ${renderLicenseBadge(license)}
 
@@ -160,6 +160,8 @@ export const generateMarkdown = ({title, description, installation, usage, licen
   ${tests}
   
   ## Questions
+
+  If you would like to view more of my work, check out my [GitHub profile](https://github.com/${username}/)
 
   If you have any questions or comments, you can reach me at ${email}
 `
